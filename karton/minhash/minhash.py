@@ -59,7 +59,7 @@ class Minhash(Karton):
         minhash_input = {
             "seed": lean_minhash.seed,
             "hash_values": lean_minhash.hashvalues.tolist(),
-            "minhash_type": task.headers["kind"].upper(),
+            "minhash_type": task.headers["kind"],
         }
 
         post_json = post_minhash_to_sample(
